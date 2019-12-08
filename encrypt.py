@@ -12,5 +12,4 @@ def encrypt(b_plaintext, key_id):
         Plaintext = b_plaintext
     )
     ciphertext = base64.b64encode(kms_result['CiphertextBlob'])
-    print(ciphertext)
     return ciphertext
