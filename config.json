@@ -1,0 +1,26 @@
+{
+  "twitter": {
+    "use_kms": false,
+    "credentials_file": "creds.json"
+  },
+  "aws": {
+    "region": "us-east-1",
+    "kinesis_stream": "twitter-stream"
+  },
+  "bot": {
+    "tweets": [
+      "This is my first tweet with Sparrow by @AldoOkware - https://github.com/aldookware/sparrow",
+      "Wow! Isn't Sparrow by @AldoOkware just the coolest! https://github.com/aldookware/sparrow",
+      "Jeez! Everyone should learn about AWS Lambda and Twitter Bots from @AldoOkware"
+    ]
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "json"
+  },
+  "retry": {
+    "max_attempts": 3,
+    "backoff_factor": 2,
+    "max_delay": 60
+  }
+}
